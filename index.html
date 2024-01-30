@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="styles/styles.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+</head>
+<style>
+/* footer styling start */
+    .footer-container{
+        display: block;
+        text-align: center;
+        font-size: 15px;
+    }
+    /* footer styling end */
+    
+    /* sevcontent styling start */
+    .sevcontent{
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        
+    }
+    /* sevcontent styling end */
+    
+    /* fifthcontent styling start */
+    .fifthcontent{
+        display: block;
+        text-align: center;
+        font-size: 15px;
+    }
+    /* fifthcontent styling end */
+    
+    /* fourcontent styling start */
+    .fourthcontentheading{
+        display: grid;
+        /* font-size: 1px; */
+        justify-content: right;
+        align-items: flex-end;
+    } 
+    
+    .fourthcontent{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(164, 240, 247);
+        
+    }
+    
+    .fourthcontent4box{
+        display: grid; 
+       grid-template-columns:  200px 400px ;
+        gap: 40px;
+        padding: 80px;  
+    }
+    
+    .twobox{
+        display: grid;
+        grid-template-columns: 300px 300px; 
+        padding: 20px ; 
+        text-align: center;   
+        gap: 20px 45px ;
+    } 
+    
+    .grid-container{
+        display: flex ;
+        grid-template-rows: 100px 100px;
+        background-color: white;
+        column-gap: 20px;
+        padding: 50px 50px;
+        justify-content:  center;
+        gap: 20px;
+    }
+    
+    .leader{
+        background-color:rgba(255, 255, 255, 0.8) ;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 15px;
+    }
+    
+    .patients{
+        background-color:rgba(255, 255, 255, 0.8) ;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 15px;
+    }
+    
+    .visit{
+        background-color:rgba(255, 255, 255, 0.8) ;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 15px;
+    }
+    
+    .hospital{
+        background-color:rgba(255, 255, 255, 0.8) ;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 15px;
+    }
+    /* fourcontent styling end */
+    
+    
+    /* thirdcontent styling start */
+    .thirdcontent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100;
+        padding-top: 50px;
+        
+      }
+    
+    .thirdcontent div{
+        width: 60%;
+        display: flex;
+      }
+    .thirdcontentheading{
+        font-size: 15px;
+        padding-right: 30px ;
+        color: #2fd8c2;
+        font-size: 25px;
+      }
+    
+    .thirdcontentimage{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+    
+    .thirdcontentimage img {
+        width: 80px;
+        object-fit: contain;
+      }
+    /* thirdcontent styling end */
+    
+    /* secondcontent styling start */
+    .secondcontent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100;
+        position: relative;
+        gap: 10px;
+        font-size: 20px;
+        margin: 65px  auto;
+        color: hsl(0, 0%, 100%);
+        max-width: 35%;
+    }
+    
+    .box1{
+        display: grid;
+        background-color: #10dcc1;
+        border-radius: 15px;
+        padding: 35px 35px;
+        height: 370px;
+    }
+    
+    .choose1{
+        font-style: bold;
+    }
+    
+    .box2{
+        display: grid;
+        background-color: #5395ec;
+        border-radius: 15px;
+        padding: 35px 35px;
+        height: 370px;
+        border-radius: 10px;
+    }
+    
+    .choose2{
+        font-style: bold;  
+    }
+    
+    .box3{
+        display: grid;
+        background-color: hsl(220, 37%, 18%);
+        border-radius: 15px;
+        padding: 35px 35px;
+        height: 370px;
+        border-radius: 10px;
+    }
+    /* secondcontent styling end */
+    
+    /* firstcontent styling start */
+    
+    .firstcontent{
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 60px;
+    }
+    
+    .bodylogo{
+        width: 40px;
+        aspect-ratio: auto 40 / 40;
+        height: 40px; 
+    }
+    
+    .bodylogotext{
+        font-size: 30px;
+        padding-top: 30px;
+        padding-right: 30px;
+        color: #0ddfc3;
+    }
+    
+    .text-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 30px;
+        width: 100%;
+        color: #2b2c2a; 
+    }
+    
+    .text1{
+        font-size: 15px;
+    }
+    
+    .text2{
+        font-size: 15px;
+    }
+    /* firstcontent styling end */
+    
+    
+    /* header styling start */
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
+        background-color: white;
+      }
+    
+       li{
+        display: inline;
+        margin: 10px;
+        font-size: 15px;  
+        padding-right: 40px;
+    }
+    /* header styling end */
+    </style>
+<body>
+
+    <!-- header -->
+    <header>
+        <a class="navbar-brandlogo" href="#"><img src="images/FullLogo.png" alt="logo"></a>
+            </div>
+            <div class="navtwo">
+                <ul>
+                    <li ><a href="#">About Us</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Departments</a></li>
+                </ul>
+            </div>
+    </header>
+
+    <main>
+        <!-- main body -->
+        <div class="firstcontent">
+            <img class="bodylogo" src="images/logo.png" alt="logo">
+                <p class="bodylogotext">Making the healthcare experience more human</p>
+            <div class="text-container">
+                <div class="text1">
+                    <p>
+                        We want patients to find the perfect doctor 
+                        <br>
+                        and book an appointment in the most easy 
+                        <br>
+                        way. The patient journey should be 
+                        <br>
+                        enjoyable, and that's why we are always
+                        <br>
+                        next to them: to help them find the best 
+                        <br>
+                        possible care. Anytime, anywhere.
+                        </p>
+                </div>
+                <div class="text2">
+                    <p>
+                        We also help doctors to better manage their
+                        <br>
+                        practice and build their online reputation. With
+                        <br>
+                        our integrated end-to-end solution, doctors are 
+                        <br>
+                        able not only to improve their online presence, 
+                        <br>
+                        but also to devote their time to what really 
+                        <br>
+                        matters: their patients.
+                        </p>
+                </div>
+                
+            </div>
+        </div>
+<div class="secondcontent">
+    <div class="box1">
+        <div class="boxtext1">
+            <img src="images/icon-patients.svg" alt="patient"/>
+            <p id="box1heading">For patients</p>
+            <p>Find a doctor, book a visit and solve any health-related doubt</p>
+        </div>
+        <div class="choose1">
+            <select style="background-color: #10dcc1; border: none; font-size: 20px; color: white;">
+                <option>Choose country</option>
+                <option value="1">Argentina</option>
+                <option value="2">Brazil</option>
+                <option value="3">Chile</option>
+                <option value="4">Colombia</option>
+                <option value="5">Czech</option>
+                <option value="6">Germany</option>
+                <option value="7">Italy</option>
+                <option value="8">Mexico</option>
+                <option value="9">Peru</option>
+                <option value="10">Poland</option>
+                <option value="11">PortUgal</option>
+                <option value="12">Spain</option>
+                <option value="13">Turkey</option>   
+            </select>
+        </div>
+    </div>
+    <div class="box2">
+        <div id="boxtext2">
+            <img src="images/icon-doctors.svg" alt="doctor">
+            <p id="box2heading">For patients</p>
+            <p>Save time managing visits and cut no-shows by half</p>
+        </div>
+        <div class="choose2">
+            <select style="background-color: #5395ec;border: none; font-size: 20px; color: white;">
+                <option>Choose country</option>
+                <option value="1">Argentina</option>
+                <option value="2">Brazil</option>
+                <option value="3">Chile</option>
+                <option value="4">Colombia</option>
+                <option value="4">Czech</option>
+                <option value="5">Germany</option>
+                <option value="6">Italy</option>
+                <option value="7">Mexico</option>
+                <option value="8">Peru</option>
+                <option value="9">Poland</option>
+                <option value="10">PortUgal</option>
+                <option value="11">Spain</option>
+                <option value="12">Turkey</option>
+            </select>
+            </div>
+    </div>
+    <div class="box3">
+        <div id="boxtext3">
+            <img src="images/icon-clinics.svg" alt="clinic" />
+            <p id="box3heading">For clinics</p>
+            <p>Deliver an exceptional patient experience in your clinic</p>
+        </div>
+        <div class="choose3">
+            <select style="background-color: hsl(220, 37%, 18%); border: none;font-size: 20px; color: white;">
+            <option>2 to 20 specialists</option>
+            <option value="1">Brazil</option>
+            <option value="2">Czech</option>
+            <option value="3">Italy</option>
+            <option value="4">Mexico</option>
+            <option value="5">Poland</option>
+            <option value="6">Spain</option>
+            <option value="7">Turkey</option>
+            </select>
+            <select style="background-color: hsl(220, 37%, 18%); border: none;font-size: 20px; color: white;">
+            <option>More than 20 specialis</option>
+            <option value="1">Brazil</option>
+            <option value="2">Italy</option>
+            <option value="3">Mexico</option>
+            <option value="4">Poland</option>
+            <option value="5">Spain</option>
+            </select>
+        </div>
+        </div>
+</div>
+<div class="thirdcontent">
+    <div>
+        <div class="thirdcontentheading">
+            <p>
+                We are a global <br>company<br>
+            with local culture
+            </p>
+        </div>
+
+        <div class="thirdcontentimage">
+            <img src="images/znanylekarz.png" alt="znanylekarz">
+            <img src="images/Doctoralia.png" alt="Doctoralia">
+            <img src="images/MioDottore.png" alt="MioDottore">
+            <img src="images/doktortakvimi.png" alt="doktortakvimi">
+            <img src="images/Znamylekar.jpg" alt="Znamylekar">
+            <img src="images/logo-jameda.svg" alt="logo-jameda">
+            <img src="images/logo-tuotempo.svg" alt="logo-tuotempo">
+            <img src="images/logo-gipo-primary.svg" alt="logo-gipo-primary">
+            <img src="images/logo-clinicloud.svg" alt="logo-clinicloud">
+            <img src="images/logo-feegow.svg" alt="logo-feegow">
+        </div>
+    </div>
+</div>
+
+<div class="fourthcontent">
+    <div class="fourthcontentheading">
+        <h3 style="font-size: 15px !important; padding-left: 30px; color: #047163;">The world's biggest</br> healthcare platform</h3>
+        <p style="font-size: 10px;padding-left: 30px;">We work from 9 offices all over the world, bringing Docplanner</br> Group to life in 13 countries.</p>
+        <img src="images/logocropped.png" alt="logocropped">
+    </div>
+    <div class="fourthcontent4box">
+        <div class="twobox">
+            <div class="leader">
+                <img src="images/flag.png" alt="flag">
+                <h4>Leader in 13 countries</h4>
+                <p>Poland, Brazil, Mexico, Spain, Italy, Germany, Turkey, Colombia, Czech Republic, Portugal, Argentina, Peru and Chile</p>
+            </div>
+            <div class="patients">
+                <img src="images/patients.png" alt="patients">
+                <h4>90,000,000 patients</h4>
+                <p>visit our websites each month</p>
+            </div>
+            <div class="visit">
+                <img src="images/visits.png" alt="visits">
+                <h4>15,000,000 appointments</h4>
+                <p>booked last month</p>
+            </div>
+            <div class="hospital">
+                <img src="images/doctors.png" alt="doctors">
+                <h4>210,000 active doctors</h4>
+                <p>trust our solutions</p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+
+
+<div class="fifthcontent">
+    <div>
+        <h4 style="font-size: 40px; color: rgb(41, 195, 144);">Improve the lives of millions.<br>Change yours forever</h4>
+        <br>
+        <br>
+        <p>More than 2800 team mates share our same vision, goals and passion.<br> With offices in Warsaw, Barcelona, Munich, Istanbul, Rome, Rio, Bologna,<br> Mexico City and Curitiba, our search for great talent never stops.</p>
+    </div>
+</div>
+
+<div class="sixthcontent flex-container grid-container image-container">
+    <div class="cities">
+        <div class="grid-container">
+            <img src="images/warsaw.png" alt="warsaw">
+            
+            <div  class="buttons buttons-container">
+            <p>Warsaw</p>
+            <button type="button"><b>SEE OPENINGS</b></button>
+            </div>
+        
+        
+            <img src="images/barcelona.png" alt="barcelona">
+            <div  class="buttons-container">
+            <p>Barcelona</p>
+            <button type="button"><b>SEE OPENINGS</b></button>
+            </div>
+        </div>
+
+        <div class="grid-container">
+        
+            <img src="images/munich.png" alt="munich">
+            <div  class="buttons">
+            <p>Munich</p>
+            <button type="button"><b>SEE OPENINGS</b></button>
+            </div>
+        
+        
+            <img src="images/istanbul.png" alt="Istanbul">
+            <div  class="buttons">
+            <p>Istanbul</p>
+            <button type="button"><b>SEE OPENINGS</b></button>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <img src="images/rome.png" alt="rome">
+            <div  class="buttons">
+            <p>Rome</p>
+            <button type="button"><b>SEE OPENINGS</b></button>
+            </div>
+        
+            <img src="images/bologna.png" alt="bologna">
+            <div  class="buttons">
+            <p>Bologna</p>
+            <button type="button"><b>SEE OPENINGS</b></button>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            
+            <img src="images/curitiba.png" alt="curitiba">
+            <div  class="buttons">
+            <p>Curitiba</p>
+            <button type="button"><b>SEE OPENINGS</b></button>
+            </div>
+        
+        
+            <img src="images/rio-janeiro.png" alt="rio-janeiro">
+            <div  class="buttons">
+            <p>Rio De Janeiro</p>
+            <button type="button"><b>SEE OPENINGS</b></button>
+            </div>
+        </div> 
+    
+        <div class="grid-container">
+        
+            <img src="images/mexico-city.png" alt="mexico-city">
+            <div  class="buttons">
+            <p>Mexico City</p>
+            <button type="button"><b>SEE OPENINGS</b></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sevcontent">
+    <h5 style="font-size: 50px;">Sounds interesting? Join us now!</h5>
+    <br>
+    <button style="background-color: rgb(34, 154, 205);">SEE ALL CURRENT OPENNINGS</button>
+</div>
+<br>
+<br>
+<br>
+    </main>
+<br>
+<footer>
+    <div class="footer-container">
+        We are leaders in 13 countries:
+        <a href="#">Poland</a>
+        ,
+        <a href="#">Turky</a>
+        ,
+        <a href="#">Spain</a>
+        ,
+        <a href="#">Italy</a>
+        ,
+        <a href="#">Germany</a>
+        ,
+        <a href="#">Czech Republic</a>
+        ,
+        <a href="#">Portugal</a>
+        ,
+        <a href="#">Mexico</a>
+        ,
+        <a href="#">Colombia</a>
+        ,
+        <a href="#">Brazil</a>
+        ,
+        <a href="#">Argentina</a>
+        ,
+        <a href="#">Peru</a>
+        and
+        <a href="#">Chile</a>
+        <br>
+        <br>
+        <p>This site uses cookies to deliver services in accordance with this Privacy Policy. You can specify the conditions for storing or accessing cookies on your browser.
+        <br>www.docplanner.com © 2023</p>
+    </div>
+</footer>    
+</body>
+</html>
